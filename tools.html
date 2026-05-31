@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lab | Supply Chain & Office Utilities</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/tools.css" />
+  </head>
+  <body>
+    <header class="navbar" aria-label="Primary navigation">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Abdul Moiz Shahid</a>
+        <button class="hamburger" aria-expanded="false" aria-controls="main-navigation">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+        <ul class="nav-menu" id="main-navigation">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">Vision & PhD</a></li>
+          <li><a class="nav-link" href="lab.html">The Lab</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="tools-page container">
+      <header class="tools-header">
+        <p class="eyebrow text-blue">Tools & MicroSaaS Lab</p>
+        <h1>The Lab: Supply Chain & Office Utilities.</h1>
+        <p class="tools-intro">
+          A curated collection of intelligent utilities for scaling operations, improving profitability, and simplifying day-to-day workflows.
+        </p>
+      </header>
+
+      <section class="tools-grid" aria-label="Tools and utilities">
+        <article class="tool-card primary-card">
+          <div class="tool-icon">SC</div>
+          <h2>Dynamic Safety Stock Calculator</h2>
+          <p>Optimize buffer levels across demand patterns and logistics delays with a smart, scenario-driven calculator.</p>
+          <a href="#" class="btn btn-primary">Launch Tool</a>
+        </article>
+
+        <article class="tool-card primary-card">
+          <div class="tool-icon">FB</div>
+          <h2>FBA Margin Estimator</h2>
+          <p>Quickly evaluate product profitability, fees, and net margin for Amazon FBA listings.</p>
+          <a href="#" class="btn btn-primary">Launch Tool</a>
+        </article>
+
+        <article class="tool-card primary-card">
+          <div class="tool-icon">BB</div>
+          <h2>Buy Box Competitiveness Tracker</h2>
+          <p>Track competitor pricing, win rates, and seller metrics to maintain a strong Buy Box position.</p>
+          <a href="#" class="btn btn-primary">Launch Tool</a>
+        </article>
+
+        <article class="tool-card secondary-card">
+          <div class="tool-icon">PDF</div>
+          <h2>PDF Utility Hub</h2>
+          <p>Convert, merge, and simplify documents with a lightweight suite built for office workflows.</p>
+          <a href="#" class="btn btn-ghost">Launch Tool</a>
+        </article>
+
+        <article class="tool-card secondary-card">
+          <div class="tool-icon">CT</div>
+          <h2>Clean Text Converter</h2>
+          <p>Transform messy copy into polished, structured text ready for product listings and reports.</p>
+          <a href="#" class="btn btn-ghost">Launch Tool</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Ready to collaborate?</h3>
+          <p>Let's build an autonomous supply chain platform that scales with precision and speed.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <a href="mailto:moiz.shahid@outlook.com">moiz.shahid@outlook.com</a>
+          <a href="https://linkedin.com/in/iMoizShahid" target="_blank" rel="noopener">linkedin.com/in/iMoizShahid</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 Abdul Moiz Shahid</span>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/iMoizShahid" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      hamburger?.addEventListener('click', () => {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

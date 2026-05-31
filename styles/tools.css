@@ -1,0 +1,130 @@
+:root {
+  --tool-bg: rgba(255, 255, 255, 0.03);
+  --tool-border: rgba(255, 255, 255, 0.08);
+  --tool-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --tool-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+body.light-theme {
+  --tool-bg: rgba(0, 102, 204, 0.04);
+  --tool-border: rgba(0, 102, 204, 0.12);
+  --tool-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  --tool-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+.tools-page {
+  padding: var(--spacing-4xl) 0 var(--spacing-6xl);
+}
+
+.tools-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--spacing-5xl);
+}
+
+.tools-header h1 {
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  line-height: 1.05;
+  margin: var(--spacing-md) auto var(--spacing-lg);
+  color: var(--white);
+}
+
+.tools-intro {
+  font-size: var(--font-size-lg);
+  color: var(--muted);
+  line-height: var(--line-height-relaxed);
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-4xl);
+  align-items: stretch;
+}
+
+.tool-card {
+  display: grid;
+  gap: var(--spacing-md);
+  background-color: var(--tool-bg);
+  border: 1px solid var(--tool-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4xl);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.tool-card:hover,
+.tool-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--tool-shadow-hover);
+  border-color: rgba(0, 217, 255, 0.2);
+}
+
+.tool-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background-color: rgba(0, 217, 255, 0.12);
+  color: var(--color-electric-blue);
+  display: grid;
+  place-items: center;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.tool-card:hover .tool-icon,
+.tool-card:focus-within .tool-icon {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 18px 30px rgba(0, 217, 255, 0.12);
+  background-color: rgba(0, 217, 255, 0.18);
+}
+
+.tool-card h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--white);
+}
+
+.tool-card p {
+  color: var(--muted);
+  line-height: var(--line-height-relaxed);
+}
+
+.primary-card {
+  background-color: rgba(0, 217, 255, 0.03);
+}
+
+.secondary-card {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.tool-card .btn {
+  width: fit-content;
+}
+
+@media (max-width: 960px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-header h1 {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+
+  .tools-page {
+    padding: var(--spacing-3xl) 0 var(--spacing-5xl);
+  }
+
+  .tool-card {
+    padding: var(--spacing-3xl);
+  }
+}

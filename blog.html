@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Abdul Moiz Shahid</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/blog.css" />
+  </head>
+  <body>
+    <header class="navbar" aria-label="Primary navigation">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Abdul Moiz Shahid</a>
+        <button class="hamburger" aria-expanded="false" aria-controls="main-navigation">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+        <ul class="nav-menu" id="main-navigation">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">Vision & PhD</a></li>
+          <li><a class="nav-link" href="lab.html">The Lab</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </header>
+    <main class="blog-page container">
+      <section class="featured-article section">
+        <div class="featured-content">
+          <div class="featured-copy">
+            <div class="hero-badge">
+              <span class="pill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 5h14v14H5V5zm2 2v10h10V7H7zm2 2h6v2H9V9zm0 4h6v2H9v-2z"/></svg>
+              </span>
+              <p class="eyebrow text-blue">Featured Article</p>
+            </div>
+            <h1>Why Agentic AI will Replace Traditional Replenishment Alerts</h1>
+            <p class="featured-description">
+              Read research-backed analysis from a supply chain architect who builds agentic systems that convert alerts into execution-ready replenishment and routing decisions.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+          <div class="featured-image">
+            <img src="Data/Gemini_Generated_Image_w95i72w95i72w95i.png" alt="Why Agentic AI Replaces Traditional Replenishment Alerts" />
+          </div>
+        </div>
+      </section>
+
+      <section class="category-filter section" aria-label="Article categories">
+        <button class="category-pill active"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 12l6-6 12 12-6 6L3 12zm6-3.5l-3.5 3.5 3.5 3.5 3.5-3.5L9 8.5z"/></svg></span>Supply Chain Operations</button>
+        <button class="category-pill"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16v16H4V4zm8 2.5l3 3-3 3-3-3 3-3zm-4.5 9h9v2h-9v-2z"/></svg></span>Agentic AI</button>
+        <button class="category-pill"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4h12v2H6V4zm0 4h12v2H6V8zm0 4h12v2H6v-2zm0 4h12v2H6v-2z"/></svg></span>Vibe Coding MicroSaaS</button>
+      </section>
+
+      <section class="articles-grid section" aria-label="Blog articles">
+        <article class="post-card">
+          <div class="post-thumbnail"><img src="Data/Gemini_Generated_Image_t416uct416uct416.png" alt="Build a demand signal that drives inventory decisions" /></div>
+          <div class="post-content">
+            <span class="post-category"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 12l6-6 12 12-6 6L3 12zm6-3.5l-3.5 3.5 3.5 3.5 3.5-3.5L9 8.5z"/></svg></span>Supply Chain Operations</span>
+            <h2>How to Build a Demand Signal That Actually Drives Inventory Decisions</h2>
+            <p>Discover practical frameworks for translating customer data into replenishment actions without manual filters or noisy alerts.</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-thumbnail"><img src="Data/Gemini_Generated_Image_w95i72w95i72w95i.png" alt="Why Agentic AI replaces replenishment alerts" /></div>
+          <div class="post-content">
+            <span class="post-category"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v8l-7 4-7-4V6l7-4zm0 2.2L6.5 6v7.6L12 17.8l5.5-4.2V6L12 4.2zM11 9h2v6h-2V9z"/></svg></span>Agentic AI</span>
+            <h2>From Alerts to Actions: What Makes an Agentic Supply Chain?</h2>
+            <p>Learn the architecture behind systems that don't just notify you, but execute replenishment and routing decisions automatically.</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-thumbnail"><img src="Data/Gemini_Generated_Image_7390fb7390fb7390.png" alt="Designing minimal SaaS for high-performance operations" /></div>
+          <div class="post-content">
+            <span class="post-category"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 4h10v2H7V4zm0 4h10v2H7V8zm0 4h6v2H7v-2z"/></svg></span>Vibe Coding MicroSaaS</span>
+            <h2>Designing Minimal SaaS Tools for High-Performance Operations Teams</h2>
+            <p>Minimalism matters in MicroSaaS — build tools that stay out of the way and accelerate operational velocity.</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-thumbnail"><img src="Data/Gemini_Generated_Image_94gv5394gv5394gv.png" alt="Inventory discipline and risk-aligned forecasting" /></div>
+          <div class="post-content">
+            <span class="post-category"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 12l6-6 12 12-6 6L3 12zm6-3.5l-3.5 3.5 3.5 3.5 3.5-3.5L9 8.5z"/></svg></span>Supply Chain Operations</span>
+            <h2>Inventory Discipline: How to Align Forecasts with Real-World Supply Risk</h2>
+            <p>An operational playbook for balancing stock availability and working capital across volatile channels.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Ready to collaborate?</h3>
+          <p>Let's build an autonomous supply chain platform that scales with precision and speed.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <a href="mailto:moiz.shahid@outlook.com">moiz.shahid@outlook.com</a>
+          <a href="#">Schedule a call</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 Abdul Moiz Shahid</span>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      hamburger?.addEventListener('click', () => {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
