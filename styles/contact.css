@@ -143,6 +143,13 @@ body.light-theme .contact-page {
   align-self: start;
 }
 
+@media (max-width: 680px) {
+  .contact-form button {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
 .contact-details-card,
 .contact-approach-card {
   background-color: var(--panel-bg);
@@ -250,7 +257,9 @@ body.light-theme .contact-page {
 
 @media (max-width: 980px) {
   .contact-layout {
+    display: flex;
     flex-direction: column;
+    gap: var(--spacing-5xl);
   }
 }
 

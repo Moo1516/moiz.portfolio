@@ -363,6 +363,7 @@ body.light-theme .hero {
 @media (max-width: 768px) {
   .hero-grid {
     gap: var(--spacing-3xl);
+    max-width: 100%;
   }
 
   .hero-copy h1 {
@@ -371,10 +372,24 @@ body.light-theme .hero {
 
   .hero-text {
     font-size: 1rem;
+    max-width: 100%;
   }
 
   .hero-visual {
     min-height: 300px;
+    max-width: 100%;
+  }
+
+  .graphic-shell {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    max-width: 100%;
+  }
+
+  .hero-actions .btn {
+    min-width: auto;
   }
 
   .metric-card {

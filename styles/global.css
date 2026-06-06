@@ -118,14 +118,13 @@ html {
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
+html,body{height:100%;max-width:100vw;overflow-x:hidden}
 body{
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   background: linear-gradient(180deg,var(--bg), #071019 80%);
   color: var(--white);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  overflow-x:hidden;
 }
 
 body.light-theme {
@@ -391,6 +390,12 @@ li p {
 .btn-outline{background:transparent;border:1px solid rgba(0,229,255,0.12);color:var(--accent)}
 .btn:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,229,255,0.06)}
 
+.nav-actions .btn{
+  padding:8px 12px;
+  font-size:0.95rem;
+  border-radius:8px;
+}
+
 /* Disabled State */
 button:disabled,
 .btn:disabled {
@@ -544,8 +549,8 @@ body.dark-theme label {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
   border: 1px solid rgba(0, 229, 255, 0.16);
   border-radius: 8px;
   background: rgba(0, 229, 255, 0.08);
@@ -568,8 +573,8 @@ body.dark-theme label {
 }
 
 .theme-toggle svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: opacity var(--transition-base), transform var(--transition-base);
@@ -800,7 +805,7 @@ body.light-theme .theme-toggle .moon-icon {
   }
 
   .theme-toggle {
-    width: 100%;
+    width: 38px;
     justify-content: center;
   }
 }
@@ -1052,14 +1057,44 @@ footer,
 }
 
 @media(max-width:600px){
-  .nav-menu{display:none}
-  .nav-actions{display:flex;gap:6px}
-  .container{padding:16px}
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    gap: 0;
+    background-color: rgba(11, 15, 25, 0.98);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base);
+  }
+
+  .nav-actions {
+    display: flex;
+    gap: 6px;
+  }
+
+  .container {
+    padding: 16px;
+  }
 }
 
 @media (max-width: 768px) {
   .section {
     padding: var(--spacing-2xl) var(--spacing-lg);
+  }
+
+  .container,
+  .hero-grid,
+  .contact-page,
+  .contact-layout,
+  .summary-grid,
+  .metrics-grid,
+  .footer-container {
+    max-width: 100%;
   }
 }
 
